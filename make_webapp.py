@@ -21,6 +21,7 @@ class WebApp(object):
     def __init__(self, json):
         self.json = json
 
+    @staticmethod
     def from_file(file):
         return WebApp(json.load(file))
 
